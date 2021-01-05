@@ -10,13 +10,18 @@ Setup
 
 This project was developed using Python 3. Install from Python.org
 
+
 Prerequisite Packages :
 1) Tensorflow (pip install tensorflow) or (pip install tensorflow-gpu)
 2) Keras (pip install keras)
 
+
+
 This simulatons were done on SUMO Traffic Simulator and it is available at: http://sumo.dlr.de/wiki/Downloads
 
 For SUMO installation, please refer to the website.
+
+
 
 
 
