@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 01/16/20 12:27:21 by Eclipse SUMO netconvert Version 1.2.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="net.net.xml"/>
+    </input>
+
+    <output>
+        <plain-output-prefix value="plain"/>
+    </output>
+
+    <processing>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="0"/>
+        <junctions.limit-turn-speed value="-1"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+</configuration>
+-->
+
+<connections version="1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/connections_file.xsd">
+    <connection from="1fi" to="1si" fromLane="0" toLane="0"/>
+    <connection from="1fi" to="1si" fromLane="0" toLane="1"/>
+    <connection from="1fi" to="1si" fromLane="0" toLane="2"/>
+
+    <connection from="1o" to="1fi" fromLane="0" toLane="0"/>
+
+    <connection from="1si" to="3o" fromLane="0" toLane="0"/>
+    <connection from="1si" to="2o" fromLane="1" toLane="0"/>
+    <connection from="1si" to="4o" fromLane="2" toLane="0"/>
+    <connection from="1si" to="1o" fromLane="2" toLane="0"/>
+
+    <connection from="2fi" to="2si" fromLane="0" toLane="0"/>
+    <connection from="2fi" to="2si" fromLane="0" toLane="1"/>
+    <connection from="2fi" to="2si" fromLane="0" toLane="2"/>
+
+    <connection from="2o" to="2fi" fromLane="0" toLane="0"/>
+
+    <connection from="2si" to="4o" fromLane="0" toLane="0"/>
+    <connection from="2si" to="1o" fromLane="1" toLane="0"/>
+    <connection from="2si" to="3o" fromLane="2" toLane="0"/>
+    <connection from="2si" to="2o" fromLane="2" toLane="0"/>
+
+    <connection from="3fi" to="3si" fromLane="0" toLane="0"/>
+    <connection from="3fi" to="3si" fromLane="0" toLane="1"/>
+    <connection from="3fi" to="3si" fromLane="0" toLane="2"/>
+
+    <connection from="3o" to="3fi" fromLane="0" toLane="0"/>
+
+    <connection from="3si" to="2o" fromLane="0" toLane="0"/>
+    <connection from="3si" to="4o" fromLane="1" toLane="0"/>
+    <connection from="3si" to="1o" fromLane="2" toLane="0"/>
+    <connection from="3si" to="3o" fromLane="2" toLane="0"/>
+
+    <connection from="4fi" to="4si" fromLane="0" toLane="0"/>
+    <connection from="4fi" to="4si" fromLane="0" toLane="1"/>
+    <connection from="4fi" to="4si" fromLane="0" toLane="2"/>
+
+    <connection from="4o" to="4fi" fromLane="0" toLane="0"/>
+
+    <connection from="4si" to="1o" fromLane="0" toLane="0"/>
+    <connection from="4si" to="3o" fromLane="1" toLane="0"/>
+    <connection from="4si" to="2o" fromLane="2" toLane="0"/>
+    <connection from="4si" to="4o" fromLane="2" toLane="0"/>
+
+</connections>
