@@ -6,6 +6,9 @@ Intelligent Transportation Systems (ITSs) are a combination of communication, co
 Deep Reinforcement Learning (RL) is a powerful technique that has been used to improve TSC systems performance in real-time environments such as ITSs. In this work, we aim at implementing an RL algorithm to create a Sybil attack, a cyber-security attack on TSC systems. Our goal is to exploit existing vulnerabilities in TSC systems and train our attack agent at a single intersection using Deep QNetwork (DQN) to launch a cyber-attack by sending falsified data. The results show that this attack leads to notable increase in vehicles’ average travel time and makes disastrous traffic congestion. Moreover, in crowded cities, this will give rise to serious problems such as more fuel consumption and air pollution.
 
 
+
+
+
 Setup
 
 This project was developed using Python 3. Install from Python.org
