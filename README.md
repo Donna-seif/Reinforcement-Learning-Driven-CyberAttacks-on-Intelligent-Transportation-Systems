@@ -1,5 +1,5 @@
-# Reinforcement-Learning-Driven-CyberAttacks-on-Intelligent-Transportation-Systems
-Exploring Reinforcement Learning Driven Cyber-Attacks on Intelligent Transportation Systems
+# Exploring Reinforcement Learning Driven Cyber-Attacks on Intelligent Transportation Systems
+
 
 Intelligent Transportation Systems (ITSs) are a combination of communication, computer and system technologies aiming at perfect decision making for transportation infrastructure. They create efficient and safe transportation networks. The advancement of connected vehicles, generating dynamic data through wireless communications enables ITSs to improve their efficiency especially in Traffic Signal Control (TSC) which is the backbone for traffic flow scheduling. However, wireless communications channels are vulnerable to various types of cyber-security attacks and can pose severe threats to dynamic TSC systems. Attackers may attempt to create higher latency traffic flow which leads to severe traffic congestion.
 
