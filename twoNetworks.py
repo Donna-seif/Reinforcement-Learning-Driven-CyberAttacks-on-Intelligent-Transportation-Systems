@@ -19,7 +19,7 @@ from matplotlib import pyplot as plt
 # because sumo gui needs to be closed mannualy every episode
 ## TODO: find a way to stop sumo gui automatically
 sumoBinary = "C:/Program Files (x86)/Eclipse/Sumo/bin/sumo"
-sumoCmd = [sumoBinary, "-c", "C:/Users/Najmeh/Desktop/RL/Sumo-GUI/Adaptive Traffic Control System/crossactuated.sumocfg"]
+sumoCmd = [sumoBinary, "-c", "C:/Users/RL/Sumo-GUI/crossactuated.sumocfg"]
 
 class DQNAgent:
     # initialize the attribitues
