@@ -16,8 +16,7 @@ from tensorflow.keras import Sequential
 from tensorflow.keras.layers import Dense
 from matplotlib import pyplot as plt
 
-# because sumo gui needs to be closed mannualy every episode
-## TODO: find a way to stop sumo gui automatically
+
 sumoBinary = "C:/Program Files (x86)/Eclipse/Sumo/bin/sumo"
 sumoCmd = [sumoBinary, "-c", "C:/Users/RL/Sumo-GUI/crossactuated.sumocfg"]
 
@@ -48,7 +47,7 @@ class DQNAgent:
         print(model.summary())
         return model
         
-    # Agent saves sample <s,a,r,s'> to the replay memory
+    # Agent sample <s,a,r,s'> to the replay memory
     def remember(self, state, action, reward, next_state, done):
         self.memory.append((state, action, reward, next_state, done))
 
@@ -352,7 +351,6 @@ for episode in range(episodes):
                                     insimulation_veh.append(v)
                                 else:
                                     reward -= 1
-#                                    waiting_time -= 1
                                     insimulation_veh.append(v)
                             elif v in insimulation_veh:
                                 added_vehlist.remove(v)
@@ -368,7 +366,6 @@ for episode in range(episodes):
                                     insimulation_veh.append(v)
                                 else:
                                     reward -= 1
- #                                   waiting_time -= 1
                                     insimulation_veh.append(v)
                             elif v in insimulation_veh:
                                 added_vehlist.remove(v)
@@ -388,8 +385,7 @@ for episode in range(episodes):
                 elif action == 5 or action == 6 :
                     reward -= 8
                 
-                
-               # waiting_time += reward_stop
+
                 reward_total += reward
                 
                 agent.remember(state, action, reward, new_state, False)
@@ -397,7 +393,7 @@ for episode in range(episodes):
                 if (len(agent.memory) > batch_size) :
                     agent.replay(batch_size)
                 
-                # Because the end state should be the start state of  the next run
+
                 state = new_state
                 if agent.tau_num == 10:
                     agent.target_train()                
